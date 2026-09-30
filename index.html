@@ -4,9 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="ANISU TECH ZONE — Premium Digital Services. Account Unblocking, Subscriptions, SMM, AI Courses & More.">
-<meta name="keywords" content="digital services, easypaisa unblocking, capcut pro, canva pro, smm, tiktok promotion">
-<meta name="author" content="ANISU TECH ZONE">
-<meta name="theme-color" content="#667eea">
 <title>ANISU TECH ZONE — Premium Digital Services</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 <script src="https://cdn.tailwindcss.com"></script>
@@ -30,7 +27,6 @@
   body { font-family: 'Inter', sans-serif; overflow-x: hidden; }
   h1, h2, h3, h4, h5 { font-family: 'Poppins', sans-serif; }
   
-  /* Gradient Backgrounds */
   .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); }
   .gradient-text { 
     background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); 
@@ -38,9 +34,7 @@
     -webkit-text-fill-color: transparent; 
     background-clip: text;
   }
-  .gradient-dark { 
-    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); 
-  }
+  .gradient-dark { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); }
   .gradient-mesh {
     background: 
       radial-gradient(at 40% 20%, rgba(102, 126, 234, 0.4) 0px, transparent 50%),
@@ -52,7 +46,6 @@
       radial-gradient(at 0% 0%, rgba(102, 126, 234, 0.3) 0px, transparent 50%);
   }
   
-  /* Glass Effect */
   .glass { 
     background: rgba(255, 255, 255, 0.08); 
     backdrop-filter: blur(20px); 
@@ -66,7 +59,6 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
   }
   
-  /* Loading Screen */
   #loadingScreen {
     position: fixed; inset: 0; z-index: 9999;
     background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
@@ -100,17 +92,14 @@
     100% { width: 100%; }
   }
   
-  /* Card Hover */
   .card-hover { 
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    transform-style: preserve-3d;
   }
   .card-hover:hover { 
     transform: translateY(-10px) scale(1.02); 
     box-shadow: 0 30px 60px rgba(102, 126, 234, 0.3); 
   }
   
-  /* WhatsApp Float */
   .whatsapp-float {
     position: fixed; bottom: 24px; right: 24px; z-index: 999;
     background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
@@ -126,15 +115,12 @@
     50% { box-shadow: 0 10px 50px rgba(37,211,102,0.9); }
   }
   
-  /* FAQ */
   .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.5s ease; }
   .faq-answer.open { max-height: 500px; }
   
-  /* Mobile Menu */
   .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
   .mobile-menu.open { max-height: 500px; }
   
-  /* Filter Buttons */
   .filter-btn { transition: all 0.3s ease; }
   .filter-btn.active { 
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
@@ -144,7 +130,6 @@
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
   }
   
-  /* Shine Effect */
   .shine { position: relative; overflow: hidden; }
   .shine::before {
     content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
@@ -153,7 +138,6 @@
   }
   .shine:hover::before { left: 100%; }
   
-  /* Blob */
   .blob {
     position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.6;
     animation: blobFloat 8s ease-in-out infinite;
@@ -165,20 +149,14 @@
     66% { transform: translate(-20px, 20px) scale(0.9); }
   }
   
-  /* Scroll Animations */
   .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
   .reveal.active { opacity: 1; transform: translateY(0); }
   
-  /* Animated Counter */
-  .counter { font-variant-numeric: tabular-nums; }
-  
-  /* Scroll Bar */
   ::-webkit-scrollbar { width: 10px; }
   ::-webkit-scrollbar-track { background: #f1f1f1; }
   ::-webkit-scrollbar-thumb { background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 10px; }
   .dark ::-webkit-scrollbar-track { background: #1a1a2e; }
   
-  /* Nav */
   .nav-link { position: relative; }
   .nav-link::after {
     content: ''; position: absolute; bottom: -5px; left: 50%; 
@@ -247,7 +225,7 @@
   <div class="blob bg-blue-500 w-64 h-64 top-1/3 left-1/2" style="animation-delay: 4s;"></div>
   
   <div class="container mx-auto text-center max-w-5xl relative z-10">
-    <div class="inline-flex items-center gap-2 glass px-5 py-2 rounded-full text-sm mb-8 animate-fade-in">
+    <div class="inline-flex items-center gap-2 glass px-5 py-2 rounded-full text-sm mb-8">
       <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
       <span class="text-gray-200">🔥 Trusted by 1000+ Customers Worldwide</span>
     </div>
@@ -347,22 +325,22 @@
       <div class="text-center p-8 rounded-3xl bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-700 dark:to-gray-700 card-hover reveal">
         <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-5 text-white text-3xl shadow-xl">⚡</div>
         <h4 class="font-bold text-xl mb-3 dark:text-white">Fast Delivery</h4>
-        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Order karte hi minutes mein delivery — no waiting</p>
+        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Order karte hi minutes mein delivery</p>
       </div>
       <div class="text-center p-8 rounded-3xl bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-700 dark:to-gray-700 card-hover reveal">
         <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-5 text-white text-3xl shadow-xl">🔒</div>
         <h4 class="font-bold text-xl mb-3 dark:text-white">100% Safe</h4>
-        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Aapki privacy aur data humari priority hai</p>
+        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Aapki privacy humari priority</p>
       </div>
       <div class="text-center p-8 rounded-3xl bg-gradient-to-br from-green-50 to-emerald-50 dark:from-gray-700 dark:to-gray-700 card-hover reveal">
         <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-5 text-white text-3xl shadow-xl">💰</div>
         <h4 class="font-bold text-xl mb-3 dark:text-white">Best Rates</h4>
-        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Market mein sabse affordable prices</p>
+        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Market mein sabse affordable</p>
       </div>
       <div class="text-center p-8 rounded-3xl bg-gradient-to-br from-orange-50 to-red-50 dark:from-gray-700 dark:to-gray-700 card-hover reveal">
         <div class="w-20 h-20 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-5 text-white text-3xl shadow-xl">💬</div>
         <h4 class="font-bold text-xl mb-3 dark:text-white">24/7 Support</h4>
-        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Kabhi bhi WhatsApp par rabta karein</p>
+        <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">Kabhi bhi WhatsApp par rabta</p>
       </div>
     </div>
   </div>
@@ -431,21 +409,21 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-lg text-center card-hover relative reveal">
         <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-14 h-14 gradient-bg text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow-xl">1</div>
-        <div class="text-6xl mb-5 mt-3">💬</div>
-        <h4 class="font-bold text-xl mb-3 dark:text-white">WhatsApp Karein</h4>
-        <p class="text-gray-600 dark:text-gray-400 text-sm">0316-9113663 par message bhejein</p>
+        <div class="text-6xl mb-5 mt-3">🛒</div>
+        <h4 class="font-bold text-xl mb-3 dark:text-white">Service Chunein</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Jo service chahiye, us par Order Now dabayein</p>
       </div>
       <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-lg text-center card-hover relative reveal">
         <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-14 h-14 gradient-bg text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow-xl">2</div>
-        <div class="text-6xl mb-5 mt-3">🛒</div>
-        <h4 class="font-bold text-xl mb-3 dark:text-white">Service Batayein</h4>
-        <p class="text-gray-600 dark:text-gray-400 text-sm">Kaunsi service chahiye, bata dein</p>
+        <div class="text-6xl mb-5 mt-3">📝</div>
+        <h4 class="font-bold text-xl mb-3 dark:text-white">Form Bharein</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Naam, WhatsApp number, payment method</p>
       </div>
       <div class="bg-white dark:bg-gray-800 p-8 rounded-3xl shadow-lg text-center card-hover relative reveal">
         <div class="absolute -top-5 left-1/2 -translate-x-1/2 w-14 h-14 gradient-bg text-white rounded-2xl flex items-center justify-center font-bold text-2xl shadow-xl">3</div>
         <div class="text-6xl mb-5 mt-3">🚀</div>
-        <h4 class="font-bold text-xl mb-3 dark:text-white">Delivery Lein</h4>
-        <p class="text-gray-600 dark:text-gray-400 text-sm">Payment ke baad instant delivery</p>
+        <h4 class="font-bold text-xl mb-3 dark:text-white">WhatsApp Par Order</h4>
+        <p class="text-gray-600 dark:text-gray-400 text-sm">Submit karte hi order WhatsApp par chala jayega</p>
       </div>
     </div>
   </div>
@@ -464,7 +442,7 @@
         <button onclick="toggleFaq(this)" class="w-full text-left p-6 font-semibold flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 dark:text-white transition text-lg">
           <span>💳 Payment kaise karein?</span><span class="text-2xl text-purple-600 transition">+</span>
         </button>
-        <div class="faq-answer px-6"><p class="py-5 text-gray-600 dark:text-gray-400 leading-relaxed">Hum Easypaisa, JazzCash aur bank transfer accept karte hain. WhatsApp par rabta karein, payment details mil jayengi.</p></div>
+        <div class="faq-answer px-6"><p class="py-5 text-gray-600 dark:text-gray-400 leading-relaxed">Hum Easypaisa, JazzCash aur bank transfer accept karte hain. Order submit karne ke baad WhatsApp par payment details mil jayengi.</p></div>
       </div>
       <div class="border-2 border-gray-100 dark:border-gray-700 rounded-2xl overflow-hidden reveal">
         <button onclick="toggleFaq(this)" class="w-full text-left p-6 font-semibold flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 dark:text-white transition text-lg">
@@ -488,42 +466,24 @@
   </div>
 </section>
 
-<!-- CONTACT / ORDER FORM -->
+<!-- CONTACT / CTA -->
 <section id="contact" class="py-24 px-4 gradient-mesh relative overflow-hidden" style="background-color: #0f0c29;">
-  <div class="container mx-auto max-w-2xl relative z-10">
-    <div class="text-center mb-12 reveal">
-      <span class="inline-block glass px-5 py-2 rounded-full text-sm font-semibold text-purple-300 mb-4">
+  <div class="container mx-auto max-w-3xl relative z-10 text-center">
+    <div class="reveal">
+      <span class="inline-block glass px-5 py-2 rounded-full text-sm font-semibold text-purple-300 mb-6">
         📞 Get in Touch
       </span>
-      <h3 class="text-4xl md:text-6xl font-black text-white mb-4 tracking-tight">Ready to <span class="gradient-text">Order?</span></h3>
-      <p class="text-gray-300 text-lg">Form bharein ya seedha WhatsApp karein</p>
-    </div>
-    <div class="glass rounded-3xl p-8 shadow-2xl reveal">
-      <form onsubmit="submitOrder(event)" class="space-y-5">
-        <div>
-          <label class="block text-gray-200 font-medium mb-2 text-sm">👤 Aapka Naam</label>
-          <input type="text" id="orderName" required placeholder="Muhammad Ali" class="w-full px-5 py-4 rounded-xl bg-white/10 border-2 border-white/20 text-white placeholder-gray-400 focus:border-purple-500 outline-none transition">
-        </div>
-        <div>
-          <label class="block text-gray-200 font-medium mb-2 text-sm">🛒 Service Chunein</label>
-          <select id="orderService" required class="w-full px-5 py-4 rounded-xl bg-white/10 border-2 border-white/20 text-white focus:border-purple-500 outline-none transition"></select>
-        </div>
-        <div>
-          <label class="block text-gray-200 font-medium mb-2 text-sm">📱 Aapka WhatsApp Number</label>
-          <input type="tel" id="orderPhone" required placeholder="03XX-XXXXXXX" class="w-full px-5 py-4 rounded-xl bg-white/10 border-2 border-white/20 text-white placeholder-gray-400 focus:border-purple-500 outline-none transition">
-        </div>
-        <div>
-          <label class="block text-gray-200 font-medium mb-2 text-sm">💳 Easypaisa TRX ID (optional)</label>
-          <input type="text" id="orderTrx" placeholder="Transfer ke baad TRX ID" class="w-full px-5 py-4 rounded-xl bg-white/10 border-2 border-white/20 text-white placeholder-gray-400 focus:border-purple-500 outline-none transition">
-        </div>
-        <div>
-          <label class="block text-gray-200 font-medium mb-2 text-sm">💬 Message (optional)</label>
-          <textarea id="orderMsg" rows="3" placeholder="Koi khaas detail..." class="w-full px-5 py-4 rounded-xl bg-white/10 border-2 border-white/20 text-white placeholder-gray-400 focus:border-purple-500 outline-none transition"></textarea>
-        </div>
-        <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-5 rounded-xl transition shadow-lg shine text-lg">
-          📲 Send Order on WhatsApp
-        </button>
-      </form>
+      <h3 class="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight">Ready to <span class="gradient-text">Order?</span></h3>
+      <p class="text-gray-300 text-lg mb-10">Kisi bhi service ke liye WhatsApp par rabta karein — instant response</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://wa.me/923169113663?text=Assalam%20o%20Alaikum%2C%20mujhe%20service%20chahiye" 
+           class="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-2xl font-bold transition shadow-xl shine flex items-center gap-2 text-base">
+          📲 WhatsApp: 0316-9113663
+        </a>
+        <a href="#services" class="glass px-8 py-4 rounded-2xl font-bold hover:bg-white/20 transition text-white text-base">
+          Browse Services →
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -566,9 +526,92 @@
   </div>
 </footer>
 
-<a href="https://wa.me/923169113663?text=Assalam%20o%20Alaikum%2C%20mujhe%20service%20chahiye" class="whatsapp-float" target="_blank" aria-label="WhatsApp">💬</a>
+  <!-- ORDER MODAL -->
+<div id="orderModal" class="fixed inset-0 z-[1000] hidden items-center justify-center p-4" style="background: rgba(0,0,0,0.7); backdrop-filter: blur(10px);">
+  <div class="bg-white dark:bg-gray-800 rounded-3xl shadow-2xl w-full max-w-md max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+    
+    <!-- Modal Header -->
+    <div class="gradient-bg p-6 rounded-t-3xl relative">
+      <button onclick="closeOrder()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/20 hover:bg-white/30 text-white flex items-center justify-center text-xl transition">✕</button>
+      <div class="flex items-center gap-3">
+        <div id="modalIcon" class="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center text-3xl">🛒</div>
+        <div class="flex-1 pr-8">
+          <h3 id="modalTitle" class="text-white font-bold text-base leading-tight">Service</h3>
+          <p id="modalPrice" class="text-purple-100 text-sm font-semibold mt-0.5">Rs. 0</p>
+        </div>
+      </div>
+    </div>
 
-<script type="module">
+    <!-- Modal Body -->
+    <form onsubmit="submitOrder(event)" class="p-6 space-y-4">
+      
+      <div>
+        <label class="block text-gray-700 dark:text-gray-200 font-semibold mb-2 text-sm">👤 Aapka Naam *</label>
+        <input type="text" id="orderName" required placeholder="Muhammad Ali" 
+               class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:border-purple-500 outline-none transition">
+      </div>
+
+      <div>
+        <label class="block text-gray-700 dark:text-gray-200 font-semibold mb-2 text-sm">📱 WhatsApp Number *</label>
+        <input type="tel" id="orderPhone" required placeholder="03XX-XXXXXXX" 
+               class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:border-purple-500 outline-none transition">
+      </div>
+
+      <div>
+        <label class="block text-gray-700 dark:text-gray-200 font-semibold mb-2 text-sm">📧 Email (optional)</label>
+        <input type="email" id="orderEmail" placeholder="ali@example.com" 
+               class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:border-purple-500 outline-none transition">
+      </div>
+
+      <div>
+        <label class="block text-gray-700 dark:text-gray-200 font-semibold mb-2 text-sm">💳 Payment Method *</label>
+        <div class="grid grid-cols-3 gap-2">
+          <label class="cursor-pointer">
+            <input type="radio" name="payment" value="Easypaisa" class="peer hidden" checked>
+            <div class="text-center p-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 peer-checked:border-purple-500 peer-checked:bg-purple-50 dark:peer-checked:bg-purple-900/30 transition">
+              <div class="text-2xl">💚</div>
+              <div class="text-xs font-semibold mt-1 dark:text-white">Easypaisa</div>
+            </div>
+          </label>
+          <label class="cursor-pointer">
+            <input type="radio" name="payment" value="JazzCash" class="peer hidden">
+            <div class="text-center p-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 peer-checked:border-purple-500 peer-checked:bg-purple-50 dark:peer-checked:bg-purple-900/30 transition">
+              <div class="text-2xl">🔴</div>
+              <div class="text-xs font-semibold mt-1 dark:text-white">JazzCash</div>
+            </div>
+          </label>
+          <label class="cursor-pointer">
+            <input type="radio" name="payment" value="Bank Transfer" class="peer hidden">
+            <div class="text-center p-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 peer-checked:border-purple-500 peer-checked:bg-purple-50 dark:peer-checked:bg-purple-900/30 transition">
+              <div class="text-2xl">🏦</div>
+              <div class="text-xs font-semibold mt-1 dark:text-white">Bank</div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 dark:text-gray-200 font-semibold mb-2 text-sm">💬 Message (optional)</label>
+        <textarea id="orderMsg" rows="2" placeholder="Koi khaas detail..." 
+                  class="w-full px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white focus:border-purple-500 outline-none transition"></textarea>
+      </div>
+
+      <div class="bg-blue-50 dark:bg-blue-900/20 border-2 border-blue-200 dark:border-blue-800 rounded-xl p-3 text-xs text-blue-800 dark:text-blue-300">
+        💡 Order submit karne ke baad aapko WhatsApp par payment details milengi.
+      </div>
+
+      <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-4 rounded-xl transition shadow-lg shine text-base">
+        📲 Submit & Send on WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/923169113663?text=Assalam%20o%20Alaikum%2C%20mujhe%20service%20chahiye" 
+   class="whatsapp-float" target="_blank" aria-label="WhatsApp">💬</a>
+  
+  <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
 import { getFirestore, collection, getDocs, addDoc, query, orderBy, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
@@ -588,20 +631,22 @@ const db = getFirestore(app);
 let services = [];
 let currentCategory = 'all';
 let currentSearch = '';
+let currentOrderService = { title: '', price: '', icon: '' };
 
+// ==================== LOAD SERVICES ====================
 async function loadServicesFromFirebase() {
   try {
     const q = query(collection(db, 'Services'), orderBy('order', 'asc'));
     const snap = await getDocs(q);
     services = snap.docs.map(d => ({ id: d.id, ...d.data() }));
     renderServices();
-    fillServiceDropdown();
   } catch (err) {
     console.error('Error:', err);
     document.getElementById('servicesGrid').innerHTML = '<p class="text-center col-span-full text-red-500 py-8">Services load nahi ho sakeen.</p>';
   }
 }
 
+// ==================== RENDER SERVICES ====================
 function renderServices() {
   const grid = document.getElementById("servicesGrid");
   const noResults = document.getElementById("noResults");
@@ -624,18 +669,22 @@ function renderServices() {
     const card = document.createElement("div");
     card.className = `bg-white dark:bg-gray-800 p-6 rounded-3xl shadow-md card-hover border-t-4 ${service.color || 'border-purple-500'} reveal`;
     card.style.transitionDelay = (i * 0.05) + 's';
+    
+    const safeTitle = (service.title || '').replace(/'/g, "\\'").replace(/"/g, '&quot;');
+    const safePrice = (service.price || '').replace(/'/g, "\\'");
+    const safeIcon = (service.icon || '🛒').replace(/'/g, "\\'");
+    
     card.innerHTML = `
       <div class="flex justify-between items-start mb-4">
-        <div class="text-5xl">${service.icon}</div>
+        <div class="text-5xl">${service.icon || '🛒'}</div>
         ${service.price ? `<span class="bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900 dark:to-pink-900 text-purple-700 dark:text-purple-300 text-xs font-bold px-4 py-2 rounded-full">${service.price}</span>` : ''}
       </div>
       <h4 class="font-bold text-xl mb-3 dark:text-white">${service.title}</h4>
       <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">${service.desc || ''}</p>
-      <a href="https://wa.me/923169113663?text=${encodeURIComponent('Assalam o Alaikum, mujhe yeh service chahiye: ' + service.title)}" 
-         target="_blank"
-         class="inline-block w-full text-center bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-3.5 rounded-xl text-sm transition shadow-md shine">
-        📲 Order on WhatsApp
-      </a>
+      <button onclick="openOrder('${safeTitle}', '${safePrice}', '${safeIcon}')" 
+         class="w-full text-center bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-semibold py-3.5 rounded-xl text-sm transition shadow-md shine">
+        🛒 Order Now
+      </button>
     `;
     grid.appendChild(card);
   });
@@ -648,19 +697,7 @@ function renderServices() {
   }, 100);
 }
 
-function fillServiceDropdown() {
-  const select = document.getElementById("orderService");
-  if (!select) return;
-  select.innerHTML = '<option value="" style="color:#000">-- Service chunein --</option>';
-  services.forEach(s => {
-    const opt = document.createElement("option");
-    opt.value = s.title;
-    opt.textContent = `${s.icon} ${s.title}${s.price ? ' — ' + s.price : ''}`;
-    opt.style.color = '#000';
-    select.appendChild(opt);
-  });
-}
-
+// ==================== FILTER ====================
 window.setCategory = (cat, btn) => {
   currentCategory = cat;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -673,17 +710,44 @@ window.filterServices = () => {
   renderServices();
 };
 
+// ==================== ORDER MODAL ====================
+window.openOrder = (title, price, icon) => {
+  currentOrderService = { title, price, icon };
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalPrice').textContent = price || 'Contact for price';
+  document.getElementById('modalIcon').textContent = icon || '🛒';
+  const modal = document.getElementById('orderModal');
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+};
+
+window.closeOrder = () => {
+  const modal = document.getElementById('orderModal');
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  document.body.style.overflow = '';
+};
+
+document.getElementById('orderModal')?.addEventListener('click', (e) => {
+  if (e.target.id === 'orderModal') closeOrder();
+});
+
+// ==================== SUBMIT ORDER ====================
 window.submitOrder = async (e) => {
   e.preventDefault();
   const name = document.getElementById("orderName").value;
-  const service = document.getElementById("orderService").value;
   const phone = document.getElementById("orderPhone").value;
+  const email = document.getElementById("orderEmail")?.value || '';
   const msg = document.getElementById("orderMsg").value;
-  const trxId = document.getElementById("orderTrx")?.value || '';
+  const payment = document.querySelector('input[name="payment"]:checked')?.value || 'Easypaisa';
+  const service = currentOrderService.title;
+  const price = currentOrderService.price;
 
   try {
     await addDoc(collection(db, 'orders'), {
-      name, service, phone, message: msg, trxId,
+      name, service, price, phone, email, message: msg,
+      payment: payment,
       status: 'pending',
       createdAt: serverTimestamp()
     });
@@ -691,17 +755,24 @@ window.submitOrder = async (e) => {
     console.error('Order save error:', err);
   }
 
-  let text = `Assalam o Alaikum ANISU TECH ZONE!\n\n`;
-  text += `👤 Naam: ${name}\n`;
-  text += `🛒 Service: ${service}\n`;
-  text += `📱 WhatsApp: ${phone}\n`;
-  if (trxId) text += `💳 TRX ID: ${trxId}\n`;
-  if (msg) text += `💬 Message: ${msg}\n`;
-  text += `\nBaraye meharbani order confirm karein.`;
+  let text = `🛒 *NEW ORDER — ANISU TECH ZONE*\n\n`;
+  text += `📦 *Service:* ${service}\n`;
+  text += `💰 *Price:* ${price || 'Contact for price'}\n`;
+  text += `💳 *Payment:* ${payment}\n\n`;
+  text += `👤 *Name:* ${name}\n`;
+  text += `📱 *WhatsApp:* ${phone}\n`;
+  if (email) text += `📧 *Email:* ${email}\n`;
+  if (msg) text += `💬 *Message:* ${msg}\n`;
+  text += `\n━━━━━━━━━━━━━━━\n`;
+  text += `✅ Please confirm my order and send payment details.`;
 
   window.open(`https://wa.me/923169113663?text=${encodeURIComponent(text)}`, '_blank');
+  
+  closeOrder();
+  e.target.reset();
 };
 
+// ==================== FAQ ====================
 window.toggleFaq = (btn) => {
   const answer = btn.nextElementSibling;
   const icon = btn.querySelector('span:last-child');
@@ -709,10 +780,12 @@ window.toggleFaq = (btn) => {
   icon.textContent = answer.classList.contains('open') ? '−' : '+';
 };
 
+// ==================== MOBILE MENU ====================
 window.toggleMenu = () => {
   document.getElementById('mobileMenu').classList.toggle('open');
 };
 
+// ==================== DARK MODE ====================
 window.toggleDark = () => {
   document.documentElement.classList.toggle('dark');
   const isDark = document.documentElement.classList.contains('dark');
@@ -722,16 +795,20 @@ window.toggleDark = () => {
 
 if (localStorage.getItem('darkMode') === 'on') {
   document.documentElement.classList.add('dark');
+  setTimeout(() => {
+    const btn = document.querySelector('button[onclick="toggleDark()"]');
+    if (btn) btn.textContent = '☀️';
+  }, 100);
 }
 
-// Loading Screen
+// ==================== LOADING SCREEN ====================
 window.addEventListener('load', () => {
   setTimeout(() => {
     document.getElementById('loadingScreen').classList.add('hide');
   }, 1800);
 });
 
-// Scroll Reveal
+// ==================== SCROLL REVEAL ====================
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) entry.target.classList.add('active');
@@ -742,7 +819,7 @@ setTimeout(() => {
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 }, 2000);
 
-// Animated Counter
+// ==================== ANIMATED COUNTER ====================
 function animateCounter(el, target) {
   let current = 0;
   const increment = target / 50;
@@ -763,8 +840,11 @@ setTimeout(() => {
   });
 }, 2000);
 
+// ==================== INIT ====================
 loadServicesFromFirebase();
 </script>
 
 </body>
 </html>
+  
+  
